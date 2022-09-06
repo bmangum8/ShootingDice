@@ -32,15 +32,15 @@ namespace ShootingDice
 
             Console.WriteLine("-------------------");
 
-            SmackTalkingPlayer smackTalker = new SmackTalkingPlayer();
-            smackTalker.Name = "Evan";
-            smackTalker.Play(player1);
+            // SmackTalkingPlayer smackTalker = new SmackTalkingPlayer();
+            // smackTalker.Name = "Evan";
+            // smackTalker.Play(player1);
 
             Console.WriteLine("-------------------");
 
-            OneHigherPlayer oneHigherPlayer = new OneHigherPlayer();
-            oneHigherPlayer.Name = "Mason";
-            oneHigherPlayer.Play(smackTalker);
+            // OneHigherPlayer oneHigherPlayer = new OneHigherPlayer();
+            // oneHigherPlayer.Name = "Mason";
+            // oneHigherPlayer.Play(smackTalker);
             
             Console.WriteLine("-------------------");
 
@@ -50,27 +50,33 @@ namespace ShootingDice
 
             Console.WriteLine("-------------------");
 
-            CreativeSmackTalkingPlayer creativeSmackTalk = new CreativeSmackTalkingPlayer();
-            creativeSmackTalk.Name = "Haley";
-            creativeSmackTalk.Play(player2);
+            // CreativeSmackTalkingPlayer creativeSmackTalk = new CreativeSmackTalkingPlayer();
+            // creativeSmackTalk.Name = "Haley";
+            // creativeSmackTalk.Play(player2);
 
             Console.WriteLine("-------------------");
 
-            SoreLoserPlayer soreLoser = new SoreLoserPlayer();
-            soreLoser.Name = "Ben";
-            soreLoser.Play(player1);
+            // SoreLoserPlayer soreLoser = new SoreLoserPlayer();
+            // soreLoser.Name = "Ben";
+            // soreLoser.Play(player1);
 
             Console.WriteLine("-------------------");
 
+            UpperHalfPlayer upperHalf = new UpperHalfPlayer();
+            upperHalf.Name = "AlsoEvan";
+            upperHalf.Play(player1);
+
+            Console.WriteLine("-------------------");
             
+            upperHalf.Play(large);
 
             Console.WriteLine("-------------------");
 
-            List<Player> players = new List<Player>() {
-                player1, player2, player3, large
-            };
+            // List<Player> players = new List<Player>() {
+            //     player1, player2, player3, large
+            // };
 
-            PlayMany(players);
+            // PlayMany(players);
         }
 
         static void PlayMany(List<Player> players)
