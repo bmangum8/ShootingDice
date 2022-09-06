@@ -32,6 +32,10 @@ namespace ShootingDice
 
             Console.WriteLine("-------------------");
 
+            SmackTalkingPlayer smackTalker = new SmackTalkingPlayer();
+            smackTalker.Name = "Evan";
+            smackTalker.Play(player1);
+
             List<Player> players = new List<Player>() {
                 player1, player2, player3, large
             };
@@ -62,7 +66,7 @@ namespace ShootingDice
             {
                 Console.WriteLine("-------------------");
 
-                // Make adjacent players play noe another
+                // Make adjacent players play one another
                 Player player1 = shuffledPlayers[i];
                 Player player2 = shuffledPlayers[i + 1];
                 player1.Play(player2);
