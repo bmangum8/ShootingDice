@@ -41,7 +41,14 @@ namespace ShootingDice
             OneHigherPlayer oneHigherPlayer = new OneHigherPlayer();
             oneHigherPlayer.Name = "Mason";
             oneHigherPlayer.Play(smackTalker);
-             Console.WriteLine("-------------------");
+            
+            Console.WriteLine("-------------------");
+
+            HumanPlayer humanPlayer = new HumanPlayer();
+            humanPlayer.Name = "Brittany";
+            humanPlayer.Play(player1);
+
+            Console.WriteLine("-------------------");
 
             List<Player> players = new List<Player>() {
                 player1, player2, player3, large
