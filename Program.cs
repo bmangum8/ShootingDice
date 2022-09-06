@@ -41,7 +41,7 @@ namespace ShootingDice
             // OneHigherPlayer oneHigherPlayer = new OneHigherPlayer();
             // oneHigherPlayer.Name = "Mason";
             // oneHigherPlayer.Play(smackTalker);
-            
+
             Console.WriteLine("-------------------");
 
             // HumanPlayer humanPlayer = new HumanPlayer();
@@ -56,19 +56,29 @@ namespace ShootingDice
 
             Console.WriteLine("-------------------");
 
-            // SoreLoserPlayer soreLoser = new SoreLoserPlayer();
-            // soreLoser.Name = "Ben";
-            // soreLoser.Play(player1);
+            SoreLoserPlayer soreLoser = new SoreLoserPlayer();
+            soreLoser.Name = "Ben";
+            try
+            { 
+                soreLoser.Play(player1); 
+            }
+            catch
+            {
+                Console.WriteLine("Sore Loser...");
+            }
+
 
             Console.WriteLine("-------------------");
 
-            UpperHalfPlayer upperHalf = new UpperHalfPlayer();
-            upperHalf.Name = "AlsoEvan";
-            upperHalf.Play(player1);
+            // UpperHalfPlayer upperHalf = new UpperHalfPlayer();
+            // upperHalf.Name = "Allison";
+            // upperHalf.Play(player1);
 
             Console.WriteLine("-------------------");
-            
-            upperHalf.Play(large);
+
+            SoreLoserUpperHalfPlayer soreLoserUpper = new SoreLoserUpperHalfPlayer();
+            soreLoserUpper.Name = "Penny";
+            soreLoserUpper.Play(player1);
 
             Console.WriteLine("-------------------");
 
