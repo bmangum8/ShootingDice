@@ -23,14 +23,7 @@ namespace ShootingDice
             }
             else if (myRoll < otherRoll)
             {
-                try
-                {
-                    int errorInt = myRoll / 0;
-                }
-                catch (DivideByZeroException)
-                {
-                    Console.WriteLine($"I am trying to throw and error!!!!");
-                }
+                throw new Exception("Whawwww");
             }
             else
             {
