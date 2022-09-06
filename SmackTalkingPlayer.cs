@@ -8,6 +8,12 @@ namespace ShootingDice
     public class SmackTalkingPlayer : Player
     {
         public string Taunt { get; } = "You are bad at dice.";
+
+        // public override int Roll()
+        // {
+        //     // Return a random number between 1 and DiceSize
+        //     return new Random().Next(DiceSize) + 1;
+        // }
         public override void Play(Player other)
         {
             // Call roll for "this" object and for the "other" object
@@ -31,6 +37,5 @@ namespace ShootingDice
                 Console.WriteLine("It's a tie");
             }
         }
-    }
     }
 }
