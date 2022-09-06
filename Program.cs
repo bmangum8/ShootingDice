@@ -44,15 +44,25 @@ namespace ShootingDice
             
             Console.WriteLine("-------------------");
 
-            HumanPlayer humanPlayer = new HumanPlayer();
-            humanPlayer.Name = "Brittany";
-            humanPlayer.Play(player1);
+            // HumanPlayer humanPlayer = new HumanPlayer();
+            // humanPlayer.Name = "Brittany";
+            // humanPlayer.Play(player1);
 
             Console.WriteLine("-------------------");
 
             CreativeSmackTalkingPlayer creativeSmackTalk = new CreativeSmackTalkingPlayer();
             creativeSmackTalk.Name = "Haley";
             creativeSmackTalk.Play(player2);
+
+            Console.WriteLine("-------------------");
+
+            SoreLoserPlayer soreLoser = new SoreLoserPlayer();
+            soreLoser.Name = "Ben";
+            soreLoser.Play(player1);
+
+            Console.WriteLine("-------------------");
+
+            
 
             Console.WriteLine("-------------------");
 
